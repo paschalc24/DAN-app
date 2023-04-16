@@ -7,10 +7,10 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: Testing Secrets
-          run: |
-            echo "$DEVOPS"
           env:
             DEVOPS: ${{ secrets.API_TOKEN }}
+          run: |
+            echo "$DEVOPS"
         - name: Environment Variables
           run: |
             echo "GITHUB_ACTION: ${GITHUB_ACTION}"
