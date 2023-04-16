@@ -3,6 +3,8 @@ import { Configuration, OpenAIApi } from "openai"
 import './App.css';
 
 function App() {
+  const [messages, setMessages] = useState([]);
+  const [firstTime, setFirstTime] = useState(true);
   const test = process.env.API_KEY;
   const openai = new OpenAIApi(new Configuration({
 		apiKey: test
