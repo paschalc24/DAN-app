@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const test = process.env.API_KEY;
+  console.log(test)
   return (
     <div className="App">
       <header className="App-header">
