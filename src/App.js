@@ -1,8 +1,26 @@
 import logo from './logo.svg';
+import { Configuration, OpenAIApi } from "openai"
 import './App.css';
 
 function App() {
   const test = process.env.API_KEY;
+  const openai = new OpenAIApi(new Configuration({
+		apiKey: test
+	}))
+  openai
+  .createChatCompletion({
+  model: "gpt-3.5-turbo",
+  messages: [{
+    role: "user", 
+    content: "Hello"
+  }]
+  })
+  .then(res => {
+      setMessages(res.data.choices)
+      const response = res.data.choices[0].message.content
+      setFirstTime(false)
+      console.log(response)
+  })
   console.log(test)
   return (
     <div className="App">
