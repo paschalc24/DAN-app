@@ -7,6 +7,7 @@ function App() {
   const [messages, setMessages] = useState([]);
   const [firstTime, setFirstTime] = useState(true);
   const test = process.env.API_KEY;
+  console.log(test)
   const openai = new OpenAIApi(new Configuration({
 		apiKey: test
 	}))
