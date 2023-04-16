@@ -6,10 +6,8 @@ import './App.css';
 function App() {
   const [messages, setMessages] = useState([]);
   const [firstTime, setFirstTime] = useState(true);
-  const test = process.env.API_KEY;
-  console.log(test)
   const openai = new OpenAIApi(new Configuration({
-		apiKey: test
+		apiKey: process.env.API_KEY
 	}))
   openai
   .createChatCompletion({
@@ -25,7 +23,6 @@ function App() {
       setFirstTime(false)
       console.log(response)
   })
-  console.log(test)
   return (
     <div className="App">
       <header className="App-header">
