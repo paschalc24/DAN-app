@@ -78,7 +78,7 @@ function ChatBox() {
 	const handleChange = (event) => {
 	  let scHeight = event.target.scrollHeight;
 	  const textarea = document.querySelector("textarea");
-	  textarea.style.height = `${scHeight}px`;
+      textarea.style.height = `${scHeight/1.5}px`;
 	  setInputText(event.target.value);
 	};
 
