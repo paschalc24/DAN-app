@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import {React, useState} from "react";
-import { Configuration, OpenAIApi } from "openai"
+import { Configuration, OpenAIApi } from "openai";
 import './App.css';
 
 function App() {
   const [messages, setMessages] = useState([]);
   const [firstTime, setFirstTime] = useState(true);
   const openai = new OpenAIApi(new Configuration({
-		apiKey: process.env.API_KEY
+		apiKey: process.env.REACT_APP_API_KEY
 	}))
   openai
   .createChatCompletion({
