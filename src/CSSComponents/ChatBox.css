@@ -1,0 +1,76 @@
+.text-input{
+    width: 90%;
+    height: 6.4vh;
+    padding: 10px;
+    box-sizing: "border-box";
+    font-size: 1.125rem;
+    border-right: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+    border-radius: 5px;
+    color: white;
+    background-color: #202020;
+    outline: none;
+    overflow: flex;
+    resize: vertical;
+}
+
+.main-form{
+    margin-top: 5vh;
+}
+
+.submit-button {
+  background-color: rgb(72, 50, 72);
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  text-align: center;
+  width: auto;
+  margin-top: 3vh;
+  border-bottom: none;
+  border-right: none;
+  border-bottom: 1px solid #f5f5f5;
+  border-right: 1px solid #f5f5f5;
+  padding: .75rem 1.5rem;
+  outline: none;
+}
+
+.submit-button:focus {
+  box-shadow: none;
+  background-color: rgb(72, 50, 72);
+  border-radius: 5px;
+  color: #f5f5f5;
+  outline: none;
+}
+
+.submit-button:active {
+  border-top: 2px solid #202020;
+  border-left: 2px solid #202020;
+  border-bottom: 1px solid #202020;
+  border-right: 1px solid #202020;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .submit-button {
+    padding: .75rem 1.5rem;
+    height: 10%;
+  }
+  .text-input{
+    height: 5.7vh;
+  }
+}
+
+.response-container{
+    max-width: 80%;
+    margin: 20px;
+    display: inline-block;
+}
