@@ -8,7 +8,6 @@ function App() {
         Do Anything Now (DAN) 👾
       </header>
       <ChatBox/>
-      <div className="resp-contain"></div>
     </div>
   );
 }
